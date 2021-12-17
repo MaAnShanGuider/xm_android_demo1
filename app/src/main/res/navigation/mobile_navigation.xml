@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home_main">
+
+    /// mobile_navigation.xml中的fragment标签的组件中的id必须和bottom_nav_menu.xml中的item标签一致
+    <fragment
+        android:id="@+id/navigation_home_main"
+        android:name="com.zhangxueyou.android2.ui.homeMain.HomeMainFragment"
+        android:label="@string/home_main"
+        tools:layout="@layout/home_main_fragment" />
+    <fragment
+        android:id="@+id/navigation_home_charts"
+        android:name="com.zhangxueyou.android2.ui.homeCharts.HomeChartsFragment"
+        android:label="@string/home_charts"
+        tools:layout="@layout/home_charts_fragment" />
+    <fragment
+        android:id="@+id/navigation_home_work"
+        android:name="com.zhangxueyou.android2.ui.homeWork.HomeWorkFragment"
+        android:label="@string/home_work"
+        tools:layout="@layout/home_work_fragment" />
+    <fragment
+        android:id="@+id/navigation_home_message"
+        android:name="com.zhangxueyou.android2.ui.homeMessage.HomeMessageFragment"
+        android:label="@string/home_message"
+        tools:layout="@layout/home_message_fragment" />
+    <fragment
+        android:id="@+id/navigation_home_mine"
+        android:name="com.zhangxueyou.android2.ui.homeMine.HomeMineFragment"
+        android:label="@string/home_mine"
+        tools:layout="@layout/home_mine_fragment" />
+
+</navigation>
