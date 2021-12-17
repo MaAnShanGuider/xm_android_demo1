@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipChildren="false"
     tools:context=".ui.homeMain.HomeMainFragment">
 
     <LinearLayout
@@ -11,6 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#f2f2f2"
+
         android:orientation="vertical">
         <ImageView
             android:id="@+id/iv_1"
@@ -54,6 +56,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginBottom="14dp"
             android:layout_height="80dp"
+            android:clipChildren="false"
             android:orientation="horizontal">
             <LinearLayout
                 android:id="@+id/nav_toDo"
@@ -62,12 +65,42 @@
                 android:orientation="vertical"
                 android:layout_gravity="center_vertical"
                 android:layout_width="wrap_content"
+                android:clipChildren="false"
                 android:layout_height="wrap_content">
 
-                <ImageView
-                    android:id="@+id/nav_toDo_icon"
-                    android:layout_width="26.5dp"
-                    android:layout_height="30dp" />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:clipChildren="false"
+                    android:layout_height="30dp">
+
+                    <ImageView
+                        android:id="@+id/nav_toDo_icon"
+                        android:layout_width="26.5dp"
+                        android:layout_centerInParent="true"
+                        android:layout_height="30dp" />
+                    <LinearLayout
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:background="@drawable/shape_radius_12"
+                        android:layout_marginLeft="-6dp"
+                        android:layout_marginTop="-6dp"
+                        android:layout_toRightOf="@id/nav_toDo_icon"
+                        android:id="@+id/nav_toDo_count_wrap"
+
+                        >
+                        <TextView
+                            android:layout_height="12dp"
+                            android:layout_width="12dp"
+                            android:id="@+id/nav_toDo_count"
+                            android:textAlignment="center"
+                            android:text="99"
+                            android:textSize="8dp"
+                            android:textColor="@color/white"
+                            />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
                 <TextView
                     android:text="待办事项"
                     android:lineHeight="28dp"
