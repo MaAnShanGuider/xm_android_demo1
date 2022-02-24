@@ -12,6 +12,7 @@
         <entry key="..\:/code/android/Android-d2/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.38229166666666664" />
         <entry key="..\:/code/android/Android-d2/app/src/main/res/drawable/shape_radius.xml" value="0.38229166666666664" />
         <entry key="..\:/code/android/Android-d2/app/src/main/res/drawable/shape_radius_12.xml" value="0.22083333333333333" />
+        <entry key="..\:/code/android/Android-d2/app/src/main/res/drawable/shape_radius_gradient.xml" value="0.22083333333333333" />
         <entry key="..\:/code/android/Android-d2/app/src/main/res/layout/activity_liudehua.xml" value="0.36614583333333334" />
         <entry key="..\:/code/android/Android-d2/app/src/main/res/layout/activity_main.xml" value="0.36614583333333334" />
         <entry key="..\:/code/android/Android-d2/app/src/main/res/layout/activity_userinfo.xml" value="0.36614583333333334" />
@@ -19,9 +20,26 @@
         <entry key="..\:/code/android/Android-d2/app/src/main/res/layout/fragment_dashboard.xml" value="0.36614583333333334" />
         <entry key="..\:/code/android/Android-d2/app/src/main/res/layout/fragment_home.xml" value="0.36614583333333334" />
         <entry key="..\:/code/android/Android-d2/app/src/main/res/layout/fragment_notifications.xml" value="0.36614583333333334" />
+        <entry key="..\:/code/android/Android-d2/app/src/main/res/layout/home/layout/activity_settings_index.xml" value="0.2046875" />
+        <entry key="..\:/code/android/Android-d2/app/src/main/res/layout/home/layout/activity_task_index.xml" value="0.2046875" />
+        <entry key="..\:/code/android/Android-d2/app/src/main/res/layout/home/layout/content_task_index.xml" value="0.2046875" />
+        <entry key="..\:/code/android/Android-d2/app/src/main/res/layout/home/layout/dialog.xml" value="0.1" />
+        <entry key="..\:/code/android/Android-d2/app/src/main/res/layout/home/layout/fragment_first.xml" value="0.2430379746835443" />
+        <entry key="..\:/code/android/Android-d2/app/src/main/res/layout/home/layout/fragment_first2.xml" value="0.2046875" />
+        <entry key="..\:/code/android/Android-d2/app/src/main/res/layout/home/layout/fragment_second.xml" value="0.2046875" />
+        <entry key="..\:/code/android/Android-d2/app/src/main/res/layout/home/layout/fragment_settings_index_2.xml" value="0.14166666666666666" />
+        <entry key="..\:/code/android/Android-d2/app/src/main/res/layout/home/layout/home_charts_fragment.xml" value="0.14166666666666666" />
+        <entry key="..\:/code/android/Android-d2/app/src/main/res/layout/home/layout/home_main_fragment.xml" value="0.2046875" />
+        <entry key="..\:/code/android/Android-d2/app/src/main/res/layout/home/layout/home_main_list_item_fragment.xml" value="0.33" />
+        <entry key="..\:/code/android/Android-d2/app/src/main/res/layout/home/layout/home_message_fragment.xml" value="0.2046875" />
+        <entry key="..\:/code/android/Android-d2/app/src/main/res/layout/home/layout/home_mine_fragment.xml" value="0.2046875" />
+        <entry key="..\:/code/android/Android-d2/app/src/main/res/layout/home/layout/home_work_fragment.xml" value="0.2046875" />
+        <entry key="..\:/code/android/Android-d2/app/src/main/res/layout/home/layout/layout_titlebar.xml" value="0.19010416666666666" />
+        <entry key="..\:/code/android/Android-d2/app/src/main/res/layout/home/layout/tv.xml" value="0.1" />
+        <entry key="..\:/code/android/Android-d2/app/src/main/res/layout/home/layout/xdialog.xml" value="0.1" />
         <entry key="..\:/code/android/Android-d2/app/src/main/res/layout/home_charts_fragment.xml" value="0.2046875" />
         <entry key="..\:/code/android/Android-d2/app/src/main/res/layout/home_charts_fragment2.xml" value="0.2046875" />
-        <entry key="..\:/code/android/Android-d2/app/src/main/res/layout/home_main_fragment.xml" value="0.2" />
+        <entry key="..\:/code/android/Android-d2/app/src/main/res/layout/home_main_fragment.xml" value="0.33" />
         <entry key="..\:/code/android/Android-d2/app/src/main/res/layout/home_message_fragment.xml" value="0.2046875" />
         <entry key="..\:/code/android/Android-d2/app/src/main/res/layout/home_mine_fragment.xml" value="0.2046875" />
         <entry key="..\:/code/android/Android-d2/app/src/main/res/layout/home_work_fragment.xml" value="0.2046875" />

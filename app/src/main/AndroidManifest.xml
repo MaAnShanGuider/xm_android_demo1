@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.zhangxueyou.android2">
 
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
+    <uses-permission android:name = "android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!--启用应用启动设备发现或者操作蓝牙设备的超级管理员-->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+<!--    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION"/>-->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -13,10 +21,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Android2"
         android:usesCleartextTraffic="true">
-
         <activity
-            android:name=".liudehua"
-            android:exported="false" />
+            android:name=".activity.settings.index.SettingsIndexActivity"
+            android:exported="true"
+            android:label="@string/title_activity_settings_index"
+            android:theme="@style/Theme.Android2.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -27,6 +36,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activity.task.index.TaskIndexActivity"
+            android:exported="true"
+            android:label="@string/title_activity_task_index" />
+
     </application>
 
 </manifest>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipChildren="false"
+    tools:context=".ui.homeMain.HomeMainFragment">
+    <ScrollView
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical"
+        android:fadingEdge="vertical"
+        android:orientation="vertical"
+        android:fillViewport="true"
+        android:background="#f2f2f2"
+        >
+        <LinearLayout
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="80dp"
+            android:scrollbars="vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#000"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="#f2e7df"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="4dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp">
+
+                <ImageView
+                    android:id="@+id/noticeIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_baseline_notifications_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="测试测试测试测试的茶树发货发噶话发噶开噶咖啡馆啊多发点噶发噶发嘎嘎噶"
+                    android:textColor="#fff38b34" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nav_record"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="14dp"
+                android:background="@drawable/shape_radius"
+                android:clipChildren="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/nav_toDo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:clipChildren="false"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:clipChildren="false">
+
+                        <ImageView
+                            android:id="@+id/nav_toDo_icon"
+                            android:layout_width="26.5dp"
+                            android:layout_height="30dp"
+                            android:layout_centerInParent="true" />
+
+                        <LinearLayout
+                            android:id="@+id/nav_toDo_count_wrap"
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_marginLeft="-6dp"
+                            android:layout_marginTop="-6dp"
+                            android:layout_toRightOf="@id/nav_toDo_icon"
+                            android:background="@drawable/shape_radius_12"
+
+                            >
+
+                            <TextView
+                                android:id="@+id/nav_toDo_count"
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:text="99"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="8dp" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineHeight="28dp"
+                        android:text="待办事项"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/nav_apply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/nav_apply_icon"
+                        android:layout_width="26.5dp"
+                        android:layout_height="30dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineHeight="28dp"
+                        android:text="我的申请"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/nav_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/nav_message_icon"
+                        android:layout_width="26.5dp"
+                        android:layout_height="30dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineHeight="28dp"
+                        android:text="消息提醒"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+
+                android:text="待办任务" />
+
+
+            <ListView
+                android:id="@+id/todo_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="0dp"
+                android:scrollbars="none"
+                android:fadingEdge="none"
+                android:dividerHeight="12dp"
+                android:divider="#00ffffff"  />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
